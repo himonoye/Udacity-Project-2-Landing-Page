@@ -32,10 +32,6 @@ let navigations = document.getElementById('navbar__list');
  * 
 */
 
-// function AddActiveClassName(Element){
-
-// }
-
 /**
  * End Helper Functions
  * Begin Main Functions
@@ -88,7 +84,7 @@ function setToActive(){
             // console.log(sections[k].offsetTop);
             const dataNav = sections[k].getAttribute('data-nav');
 
-            if (scrollYPos >= (sections[k].offsetTop) && scrollYPos < (sections[k].offsetTop + sections[k].offsetHeight)){
+            if (scrollYPos >= (sections[k].offsetTop-80) && scrollYPos < (sections[k].offsetTop-80 + sections[k].offsetHeight)){
                 sections[k].classList.add('active');
                 document.getElementById("menu__link__"+k).classList.add('active')
             } else {

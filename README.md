@@ -1,13 +1,22 @@
 # Landing Page Project
 
-## Table of Contents
+This is a landing page that uses HTML, CSS, and javascript. The landing page contains a sticky navigation bar that hightlights the anchor link of a section that is currently in the user view. 
 
-* [Instructions](#instructions)
+## Javascript Function Breakdown 
 
-## Instructions
+All the javascript functions are contained in the app.js file. The followings are the javascript function included in this file.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
 
-To get started, open `js/app.js` and start building out the app's functionality
+### buildNavigation()
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+This function will automatically run on page load. It doesn't take in any parameters. Instead, it builds out the navigation as soon as the DOM is ready. 
+
+
+### srollToActive(e)
+
+This function takes in an event object and listens on "click" action performed on the navigation links. When a link is clicked, the page scrolls to the section that is associated with the link. 
+
+
+### setToActive()
+
+This function doesn't take any parameters. It listens on "scroll" action performed by the users. When a user scroll, it checks if a existing section has entered the user's window view. If so, the associated link will be set to active and hightlighted in the UI. 
