@@ -6,16 +6,19 @@ This is a landing page that uses HTML, CSS, and javascript. The landing page con
 
 All the javascript functions are contained in the app.js file. The followings are the javascript function included in this file.
 
+---
 
 ### buildNavigation()
 
 This function will automatically run on page load. It doesn't take in any parameters. Instead, it builds out the navigation as soon as the DOM is ready. 
 
+---
 
 ### srollToActive(e)
 
 This function takes in an event object and listens on "click" action performed on the navigation links. When a link is clicked, the page scrolls to the section that is associated with the link. 
 
+---
 
 ### setToActive()
 
